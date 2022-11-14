@@ -62,6 +62,7 @@ class _LoginState extends State<Login> {
                   padding: const EdgeInsets.all(8.0),
                   child: TextField(
                     controller: passwordController,
+                    obscureText: true,
                     decoration: InputDecoration(
                       hintText: "Password",
                       contentPadding: EdgeInsets.all(14),

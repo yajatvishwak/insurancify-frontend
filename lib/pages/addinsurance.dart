@@ -8,7 +8,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 
 class AddInsurance extends StatefulWidget {
-  const AddInsurance();
+  final String selectedValue;
+
+  const AddInsurance(this.selectedValue, {Key? key}) : super(key: key);
   @override
   State<AddInsurance> createState() => _AddInsuranceState();
 }
@@ -17,6 +19,13 @@ class _AddInsuranceState extends State<AddInsurance> {
   var items = ["Life", "Home", "General", "Travel"];
   final titleController = TextEditingController();
   final descController = TextEditingController();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    selectedInsurance = widget.selectedValue;
+  }
 
   String selectedInsurance = "General";
   @override

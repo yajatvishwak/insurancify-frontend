@@ -63,13 +63,13 @@ class _ProfileState extends State<Home> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => AddInsurance(),
+                                builder: (context) => AddInsurance("General"),
                               ));
                         },
                         child: Column(
                           children: [
                             Image.asset("asset/2.png"),
-                            Text("Welcome")
+                            Text("General")
                           ],
                         )),
                   ),
@@ -79,14 +79,11 @@ class _ProfileState extends State<Home> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => AddInsurance(),
+                                builder: (context) => AddInsurance("Home"),
                               ));
                         },
                         child: Column(
-                          children: [
-                            Image.asset("asset/3.png"),
-                            Text("Welcome")
-                          ],
+                          children: [Image.asset("asset/3.png"), Text("Home")],
                         )),
                   ),
                 ],
@@ -99,13 +96,13 @@ class _ProfileState extends State<Home> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => AddInsurance(),
+                                builder: (context) => AddInsurance("Travel"),
                               ));
                         },
                         child: Column(
                           children: [
                             Image.asset("asset/4.png"),
-                            Text("Welcome")
+                            Text("Travel")
                           ],
                         )),
                   ),
@@ -115,14 +112,11 @@ class _ProfileState extends State<Home> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => AddInsurance(),
+                                builder: (context) => AddInsurance("Life"),
                               ));
                         },
                         child: Column(
-                          children: [
-                            Image.asset("asset/5.png"),
-                            Text("Welcome")
-                          ],
+                          children: [Image.asset("asset/5.png"), Text("Life")],
                         )),
                   ),
                 ],
